@@ -28,3 +28,10 @@ To keep the codebase clean and maintainable, the backend is split into specific 
 * **Dynamic Time Constraints:** Different facilities have different operating hours (e.g., the Library Reading Hall is open 24/7, while standard classrooms close at 10 PM). We designed a dynamic frontend utility that reads the room type and generates allowed time dropdowns on the fly, ensuring users can't even attempt to book a room when it's closed.
 * **Real-time UI Updates vs. Caching:** A common issue in React apps is the browser aggressively caching data, leading to "stale" screens. We implemented strict cache-busting on the client's fetch requests. This ensures that the moment an admin approves a request, the user sees the green "Approved" badge immediately without having to force-refresh their browser.
 * **Non-Blocking UI Elements:** We replaced native browser alerts (like `window.confirm`) with custom-built modal overlays. This keeps the user immersed in the application's design language even when performing destructive actions like cancelling a booking.
+
+
+
+
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/48a1f2bc-54cc-42c5-befb-43312e56e1a0" />
+
