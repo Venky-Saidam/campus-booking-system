@@ -30,16 +30,23 @@ The Campus Booking System is a centralized, responsive web application designed 
 # Features Available
 - **Real-Time Booking:** Browse and book rooms dynamically.
 - **Role-Based Access Control:** Distinct interfaces and privileges for Admins and Students/Staff.
-- **Smart Validation:** Prevents invalid durations and respects facility operating hours (e.g., 24/7 Library, 5 AM - 10 PM regular rooms).
-- **Responsive Design:** Stunning UI featuring glassmorphism, micro-animations, and responsive layouts.
+- **Smart Validation:** Prevents invalid durations and respects facility operating hours.
+- **Responsive Design:** Stunning UI featuring glassmorphism and micro-animations.
 - **Secure Authentication:** JWT-based secure login and registration system.
 
 ---
 
-# Authentication & Access
+# Authentication & Access (Login)
 The platform provides a secure entry point for all users, distinguishing between standard users and administrators automatically.
 
 ![Login Page w:800](./screenshots/1_login.png)
+
+---
+
+# User Registration
+New users can easily sign up and create a profile. Special admin privileges are assigned based on specific criteria.
+
+![Registration Page w:800](./screenshots/2_register.png)
 
 ---
 
@@ -49,7 +56,7 @@ Administrators have full oversight and control over the campus facilities and bo
 **Key Responsibilities:**
 - **Manage Facilities:** Add, update, or remove campus rooms and facilities.
 - **Monitor Usage:** View an overview of system utilization and room occupancy.
-- **Process Requests:** Approve, reject, or cancel pending booking requests from students and staff.
+- **Process Requests:** Approve, reject, or cancel pending booking requests.
 - **Filter & Search:** Functional filtering to easily manage various booking statuses.
 
 ---
@@ -83,6 +90,19 @@ Standard users can easily find and reserve the spaces they need for their academ
 A personalized view showing upcoming bookings, past history, and quick access to new reservations.
 
 ![Student Dashboard w:800](./screenshots/5_student_dashboard.png)
+
+---
+
+# System Testing
+Ensuring reliability, security, and correctness across the entire platform.
+
+**Unit Testing:**
+- Individual components (e.g., date-time validators, authentication helpers) are tested in isolation.
+- Ensures backend API validations and frontend UI elements behave correctly under edge cases.
+
+**Integration Testing:**
+- Tests the interaction between the React frontend, Node/Express backend, and MongoDB database.
+- Verifies complete end-to-end workflows, such as the full room booking lifecycle and admin approval processes.
 
 ---
 
