@@ -1,4 +1,3 @@
-# High Level Design (HLD)
 **Project Name:** IIT ISM Campus Booking System
 
 ## 1. Introduction
